@@ -1,0 +1,27 @@
+name: toko_digital_app # nama paket proyek (sesuai perintah: toko_digital_app)
+description: Aplikasi Toko Digital Sederhana (Offline First) - Tema Alat Pancing # deskripsi singkat proyek
+publish_to: 'none' # 'none' = proyek ini tidak akan diunggah ke pub.dev
+version: 1.0.0+1 # versi aplikasi 1.0.0, nomor build 1
+
+environment: # batas versi Dart SDK yang boleh dipakai
+  sdk: '>=3.0.0 <4.0.0' # minimal Dart 3.0.0, kurang dari 4.0.0
+
+dependencies: # daftar pustaka yang dipakai saat aplikasi berjalan
+  flutter: # pustaka inti Flutter
+    sdk: flutter # diambil dari Flutter SDK yang terpasang
+
+  cupertino_icons: ^1.0.6 # kumpulan ikon gaya iOS (bawaan template)
+
+  provider: ^6.1.2 # Provider -> state management (menyebarkan perubahan data ke UI secara reaktif)
+
+  sqflite: ^2.3.3+1 # sqflite -> membuat & mengakses database SQLite di HP (penyimpanan permanen)
+
+  path: ^1.9.0 # path -> membantu menyusun lokasi file database (fungsi join)
+
+dev_dependencies: # pustaka yang hanya dipakai saat pengembangan/pengujian
+  flutter_test: # pustaka untuk menulis test
+    sdk: flutter # diambil dari Flutter SDK
+  flutter_lints: ^3.0.0 # aturan lint (saran kerapian kode)
+
+flutter: # pengaturan khusus Flutter
+  uses-material-design: true # mengaktifkan font ikon Material (Icons.xxx)
